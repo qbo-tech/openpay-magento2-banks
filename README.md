@@ -1,4 +1,4 @@
-Openpay-Magento2-Stores
+Openpay-Magento2-Banks
 ======================
 
 Openpay payment gateway Magento2 extension
@@ -12,7 +12,7 @@ Install
 2. Enter following commands to install module:
 
     ```bash    
-    composer require openpay/magento2-stores
+    composer require openpay/magento2-banks
     ```
    Wait while dependencies are updated.
 
