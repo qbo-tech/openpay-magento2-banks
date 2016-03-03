@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Openpay_Banks default configuration
+ *
+ * @category    Openpay
+ * @package     Openpay_Banks
+ * @author      Federico Balderas
+ * @copyright   Openpay (http://openpay.mx)
+ * @license     http://www.apache.org/licenses/LICENSE-2.0  Apache License Version 2.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">    
+    <default>        
+        <payment>
+            <openpay_banks>
+                <active>0</active>
+                <model>Openpay\Banks\Model\Payment</model>
+                <order_status>pending_payment</order_status>
+                <payment_action>order</payment_action>                
+                <title>Openpay (transferencia bancaria)</title>
+                <sandbox_sk backend_model="Magento\Config\Model\Config\Backend\Encrypted" />                
+                <live_sk backend_model="Magento\Config\Model\Config\Backend\Encrypted" />                     
+                <allowspecific>0</allowspecific>                                                     
+            </openpay_banks>
+        </payment>
+    </default>
+</config>
