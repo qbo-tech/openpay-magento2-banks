@@ -1,4 +1,4 @@
-Openpay-Magento2-Stores
+Openpay-Magento2-Banks
 ======================
 
 Openpay payment gateway Magento2 extension
@@ -24,6 +24,6 @@ Install
     php bin/magento cache:clean
     ```
 
-4. Enable and configure Openpay in Magento Admin under Stores > Configuration > >Sales > Payment Methods > Openpay (Bank transfer)
+4. Enable and configure Openpay in Magento Admin under Stores > Configuration > Sales > Payment Methods > Openpay (Bank transfer)
 
 
