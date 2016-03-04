@@ -12,10 +12,10 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 
-    <virtualType name="Openpay\Stores\Model\ConfigProvider" type="Magento\Payment\Model\CcGenericConfigProvider">
+    <virtualType name="Openpay\Banks\Model\ConfigProvider" type="Magento\Payment\Model\CcGenericConfigProvider">
         <arguments>
             <argument name="methodCodes" xsi:type="array">
-                <item name="openpay_banks" xsi:type="const">Openpay\Stores\Model\Payment::CODE</item>
+                <item name="openpay_banks" xsi:type="const">Openpay\Banks\Model\Payment::CODE</item>
             </argument>
         </arguments>
     </virtualType>    

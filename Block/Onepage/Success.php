@@ -1,9 +1,10 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/** 
+ * @category    Payments
+ * @package     Openpay_Banks
+ * @author      Federico Balderas
+ * @copyright   Openpay (http://openpay.mx)
+ * @license     http://www.apache.org/licenses/LICENSE-2.0  Apache License Version 2.0
  */
 
 namespace Openpay\Banks\Block\Onepage;
@@ -11,7 +12,7 @@ namespace Openpay\Banks\Block\Onepage;
 use Magento\Framework\View\Element\Template;
 
 /**
- * Main contact form block
+ * Success class
  */
 class Success extends Template
 {
