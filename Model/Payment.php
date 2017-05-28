@@ -243,7 +243,7 @@ class Payment extends \Magento\Payment\Model\Method\AbstractMethod
      * @return mixed
      */
     public function createWebhook() {
-        $protocol = stripos($_SERVER['SERVER_PROTOCOL'], 'https') === true ? 'https://' : 'http://';
+        $protocol = stripos($_SERVER['SERVER_PROTOCOL'], 'https') || $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ? 'https://' : 'http://';
         $uri = $_SERVER['HTTP_HOST']."/openpay/index/webhook";
         $webhook_data = array(
             'url' => $protocol.$uri,
